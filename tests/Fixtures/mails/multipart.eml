@@ -1,0 +1,32 @@
+Message-ID: <abc123@example.com>
+In-Reply-To: <parent@example.com>
+References: <root@example.com> <parent@example.com>
+Date: Thu, 17 Sep 2026 08:42:00 +0200
+From: "John Doe" <john@example.com>
+Reply-To: support@example.com
+To: Jane Doe <jane@example.com>, max@example.com
+Cc: team@example.com
+Subject: =?UTF-8?B?UHJvamVrdCBVcGRhdGUg4pyT?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed"
+
+--mixed
+Content-Type: multipart/alternative; boundary="alt"
+
+--alt
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Gr=FC=DFe aus K=F6ln
+--alt
+Content-Type: text/html; charset=UTF-8
+
+<p>Grüße aus <b>Köln</b></p><script>alert(1)</script>
+--alt--
+--mixed
+Content-Type: application/pdf; name="report.pdf"
+Content-Disposition: attachment; filename="report.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKJcOkw7zDtsOfCg==
+--mixed--
